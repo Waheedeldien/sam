@@ -10,6 +10,7 @@ model_type = "vit_h"
 
 sam = sam_model_registry[model_type](checkpoint="sam_vit_h_4b8939.pth")
 mask_generator = SamAutomaticMaskGenerator(sam)
+
 masks = mask_generator.generate(img)
 
 print(masks)
