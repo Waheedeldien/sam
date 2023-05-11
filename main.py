@@ -4,7 +4,7 @@ import sys
 # sys.path.append("..")
 from segment_anything import SamAutomaticMaskGenerator, sam_model_registry, SamPredictor
 
-img= cv2.imread("/sam/sam/input/sincerely-media-VDPauwJ_sHo-unsplash.jpg")
+img= cv2.imread("input/sincerely-media-VDPauwJ_sHo-unsplash.jpg")
 model_type = "vit_h"
 
 
